@@ -5,10 +5,12 @@ function Products() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setProducts(data);
+      setLoading(false);
     }, 1000);
   }, []);
 
@@ -17,6 +19,9 @@ function Products() {
       p.name.toLowerCase().includes(search.toLowerCase()) &&
       (category === "All" || p.category === category)
   );
+  if (loading) {
+    return <p className="text-center mt-5">Loading...</p>;
+  }
   return (
     <section className="features-section">
       <div className="container">
