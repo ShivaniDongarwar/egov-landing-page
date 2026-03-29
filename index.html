@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eGov Landing Page</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary">eGov</a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+            <li class="nav-item ms-3">
+              <a class="btn btn-primary px-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="hero-title">
+              20 years of digital transformation in public service delivery
+              <span>It's possible.</span>
+            </h1>
+
+            <p class="hero-text mt-3">
+              Enabling governments to deliver transparent and efficient
+              services.
+            </p>
+
+            <div class="mt-4">
+              <button class="btn btn-primary me-2">Our Approach</button>
+              <button class="btn btn-outline-primary">Our Impact</button>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="https://picsum.photos/600/400" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section class="features-section">
+      <div class="container">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <h2 class="section-title">Our Products & Solutions</h2>
+          <p class="section-subtitle">
+            Enabling governments with scalable digital platforms
+          </p>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="feature-card">
+              <img src="https://picsum.photos/500/300" class="img-fluid" />
+              <div class="feature-overlay">
+                <h4>Public Health</h4>
+                <p>Digital systems for healthcare delivery</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="feature-card">
+              <img src="https://picsum.photos/500/300" class="img-fluid" />
+              <div class="feature-overlay">
+                <h4>Public Finance</h4>
+                <p>Smart financial governance solutions</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="feature-card">
+              <img src="https://picsum.photos/500/300" class="img-fluid" />
+              <div class="feature-overlay">
+                <h4>Water & Sanitation</h4>
+                <p>Improving access to clean water systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section text-center text-white">
+      <div class="container">
+        <h2 class="cta-title">Ready to transform public service delivery?</h2>
+
+        <p class="cta-text">
+          Join us in building scalable digital solutions for governments.
+        </p>
+
+        <div class="mt-4">
+          <a href="#" class="btn cta-btn">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- LEFT: LOGO + TEXT -->
+          <div class="col-md-4">
+            <h3 class="logo">eGov</h3>
+            <p class="footer-text">
+              Catalysing digital transformation in public service delivery at
+              speed & scale.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- MIDDLE: LINKS -->
+          <div class="col-md-4">
+            <h5>Useful Links</h5>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">CTA Section</a></li>
+            </ul>
+          </div>
+
+          <!-- RIGHT: SUBSCRIBE -->
+          <div class="col-md-4">
+            <h5>Subscribe Now</h5>
+            <p>Receive updates in your inbox.</p>
+
+            <div class="subscribe-box">
+              <input type="email" placeholder="Enter your email" />
+              <button>➤</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom text-center mt-4">
+          <p>© 2026 eGov. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
