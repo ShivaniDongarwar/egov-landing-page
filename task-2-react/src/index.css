@@ -1,13 +1,217 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "DM Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HERO */
+.hero {
+  padding: 120px 0;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  line-height: 1.3;
+}
+
+.hero-title span {
+  color: #0d6efd;
+}
+
+.hero-text {
+  color: #555;
+}
+
+/* FEATURES */
+.features-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.feature-card img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.feature-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hover Effects */
+.feature-card:hover img {
+  transform: scale(1.1);
+}
+
+.feature-card:hover .feature-overlay {
+  background: rgba(13, 110, 253, 0.9);
+}
+
+/* CTA */
+.cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cta-text {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* BUTTON */
+.cta-btn {
+  background: white;
+  color: #0d6efd;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* FOOTER */
+.footer {
+  background: #0f172a;
+  color: #fff;
+  padding: 60px 0 20px;
+}
+
+.logo {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+.footer-text {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* LINKS */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #1e293b;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  background: #0d6efd;
+  transform: translateY(-4px);
+}
+
+/* SUBSCRIBE */
+.subscribe-box {
+  display: flex;
+  background: #1e293b;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.subscribe-box input {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.subscribe-box button {
+  background: #0d6efd;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px) {
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
